@@ -1,13 +1,10 @@
-.container{
-   
-}
+
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(autofill, minmax(10px, 1fr)); 
-    grid-template-rows: 200px 90vh;
-    grid-template-areas: 
-       ". . . header"
-       "main main main main";
+    grid-gap: 1rem;
+    grid-template-columns: repeat(autofit, minmax(100px, 1fr)); 
+    grid-template-rows: 100px 80vh;
+    
 
     justify-content: ;
     align-content: ;
@@ -15,8 +12,8 @@
 
 .header{
     display: flex;
-    grid-area: header;
-    grid-column: 4 / 5;
+   
+    grid-column: ;
     background-color: red;
     justify-content: center;
     align-items: center;
@@ -25,7 +22,7 @@
 
 .main{
     display: flex;
-    grid-area: main;
+
     background-color: blue;
     justify-content: center;
     align-items: center;
