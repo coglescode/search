@@ -9,6 +9,12 @@ body{
    }
 
 .header{
+    -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
     display: flex;
     flex-flow: row nowrap;
     background-color: red;
@@ -19,6 +25,12 @@ body{
 }
 
 .main{
+    -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
     display: flex;
     flex-flow: column wrap;
    /* background-color: ; */
