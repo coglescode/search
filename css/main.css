@@ -29,7 +29,7 @@ body{
 
 @font-face{
      font-family: google;
-     src: url(/fonts/product-sans/Product\ Sans\ Regular.ttf);
+     src: url('/fonts/product-sans/Product\ Sans\ Regular.ttf');
      font-weight: 900;
 }
 
