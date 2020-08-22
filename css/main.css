@@ -28,13 +28,13 @@ body{
 }
 
 @font-face{
-     font-family: google;
+     font-family: myGooglefont;
      src: url('/fonts/product-sans/Product\ Sans\ Regular.ttf');
      font-weight: 900;
 }
 
 .main h1, .googlelogo{
-   font-family:google;
+   font-family:myGooglefont;
    font-size: 3rem;
    display: inline-flex;
    flex-flow: row nowrap;
