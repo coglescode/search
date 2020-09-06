@@ -24,7 +24,6 @@ body{
     -webkit-flex-flow: row nowrap;
     -ms-flex-flow: row nowrap; 
     flex-flow: row nowrap;
-
     -webkit-box-pack: justify;
     -webkit-justify-content: space-around;
     -ms-flex-pack: justify;
@@ -58,7 +57,7 @@ body{
 
 @font-face{
      font-family: myGooglefont;
-     src: url('/fonts/Product\ Sans\ Bold.ttf');
+     src: url('./fonts/product-sans/Product\ Sans\ Regular.ttf');
      font-weight: 900;
 }
 
