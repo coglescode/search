@@ -2,6 +2,7 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+
 .grid-container{
     display: grid;
     grid-auto-columns: 1fr;
@@ -9,7 +10,8 @@ body{
     /*grid-template-rows: repeat(auto-fit,  minmax(100px, 1fr));*/ 
 
    }
-   .header{
+
+.header{
     -ms-box-orient: horizontal;
     display: -webkit-box;
     display: -moz-box;
@@ -51,6 +53,7 @@ body{
     justify-content: center;
     align-content: flex-start;
     padding: 3em 0.4em 0 0.4em;
+
 }
 
 @font-face{
