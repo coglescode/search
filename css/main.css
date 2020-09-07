@@ -55,18 +55,18 @@ body{
 
 }
 
-@font-face{
-     font-family: myGooglefont;
-     src: url("/fonts/Product_Sans_Bold.ttf");
-     font-weight: 900;
-}
-
 .googlelogo{
-   font-family:myGooglefont;
+   font-family: 'Josefin Sans', sans-serif;
    font-size: 3.9rem;
    display: flex;
    flex-flow: row;
    margin: 0 0 0.5em 0;
+   font-weight: 900;
+}
+
+#g-logo{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 900;
 }
 
  form{
