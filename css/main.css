@@ -41,11 +41,11 @@ body{
  }
 
 .main{
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -moz-flex;
-    display: -webkit-flex; 
+    display: -webkit-flex; */
     display: flex;
     flex-flow: row wrap;
     /*background-color: teal;*/ 
@@ -80,12 +80,12 @@ body{
 }
 
 #search_bar{
-    -ms-box-orient: horizontal;
+    /*-ms-box-orient: horizontal;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -moz-flex;
-    display: -webkit-flex; 
+    display: -webkit-flex; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -93,7 +93,7 @@ body{
     padding: 0.5em 0  0.5em 0;
     border-radius: 3em;
     border: 2px solid #dadce0;
-    background-image: url('/img/search.png');
+    background-image: url('./img/search.png');
     background-position: 10px;
     background-repeat: no-repeat;
     background-size: 20px;
