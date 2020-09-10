@@ -12,8 +12,10 @@
     <meta name="keywords" content="html5, css3, boostrap4">
     <meta http-equiv="refresh" content="">
 
-    <link rel="stylesheet" href="../css/main.css" type="text/css">
-    
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> 
+   
     
         <title>Google Advanced Search</title>
     </head>
@@ -25,12 +27,19 @@
                     <a href="googleimg.html">Google Image Search</a>
                 </div>
                 <div class="main">
-                    <h1>Google</h1>
+                    <div class="googlelogo">
+                        <span id="g-logo" style="color: rgb(66,133,244);">G</span>
+                        <span style="color: rgb(219,68,55);">o</span>
+                        <span style="color: rgb(244,160,0);">o</span>
+                        <span style="color: rgb(66,133,244);">g</span>
+                        <span style="color: rgb(15,157,88);">l</span>
+                        <span style="color: rgb(219,68,55);">e</span>
+                     </div>
                     <form action="https://google.com/search">
-                        <input type="text" name="q">
-                        <input type="text" name="q">
-                        <input type="text" name="q">
-                        <input type="text" name="q">
+                        <div id="adv_bar"> 
+                            <input type="text" name="q" class="input_text" maxlength="2048"> 
+                           </div> 
+                     
                         <input type="submit" value="Google Advance Search">
                     </form>
                 </div>

@@ -19,10 +19,6 @@ body{
     display: -moz-flex;
     display: -webkit-flex; 
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row nowrap;
-    -ms-flex-flow: row nowrap; 
     flex-flow: row nowrap;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-around;
@@ -87,7 +83,7 @@ body{
     padding: 0.5em 0  0.5em 0;
     border-radius: 3em;
     border: 2px solid #dadce0;
-    background-image: url("search.png");
+    background-image: url("/img/search.png");
     background-position: 10px;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -100,7 +96,7 @@ input[type=text]{
     padding: 0px 0px 0px 0px;
     border-style: none;  
     font-size: 16px;
-    border: 2px solid red; 
+   /* border: 2px solid red; */
 }
 
 input[type=submit]{
@@ -109,6 +105,20 @@ input[type=submit]{
      border-radius: 0.3em;
      border-style: none;
     
+}
+
+#adv_bar, {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex; 
+    display: flex;
+   
+}
+
+#adv_bar input[type=text]{
+    border-style: solid; 
 }
 
 .footer{
