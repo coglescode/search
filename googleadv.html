@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/main.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> 
-   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
         <title>Google Advanced Search</title>
     </head>
@@ -36,9 +36,16 @@
                         <span style="color: rgb(219,68,55);">e</span>
                      </div>
                     <form action="https://google.com/search">
-                        <div id="adv_bar"> 
-                            <input type="text" name="q" class="input_text" maxlength="2048"> 
-                           </div> 
+                        <div id="adv_form">
+                            <label for="allthesewords">all these words:</label> 
+                                <input type="text" name="q" class="input_text"> 
+                            <label for="exactphrase">this exact word or phrase:</label>
+                                <input type="text" name="q" class="input_text"> 
+                            <label for="anywords">any of these words:</label> 
+                                <input type="text" name="q" class="input_text">
+                            <label for="nonethesewords">none of these words:</label> 
+                            <input type="text" name="q" class="input_text"> 
+                        </div> 
                      
                         <input type="submit" value="Google Advance Search">
                     </form>
