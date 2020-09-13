@@ -114,7 +114,9 @@ input[type=submit]{
     display: -webkit-flex; 
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: ;
+    padding: 1em;
     width: 100%; 
  
 }
@@ -132,7 +134,7 @@ label{
 
 .input_adv{
     width: 100%;
-    margin: 0; 
+    margin: ; 
 }
 
 .footer{
