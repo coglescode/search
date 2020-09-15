@@ -82,7 +82,7 @@ body{
     display: flex;
     flex-flow: row;
     justify-content: center;
-    align-content: ;
+    align-content: center;
     width: 100%;
     /* border: 2px solid red;  */ 
  
@@ -122,7 +122,8 @@ input[type=submit]{
      width: 200px;
      border-radius: 0.3em;
      border-style: none;
-    
+     font-family: 'Kumbh Sans', sans-serif;
+     font-size: 0.9em;
 }
 
 #adv_form {
@@ -137,7 +138,6 @@ input[type=submit]{
     align-content: space-around;
     padding: 0.5em;
     width: 100%; 
- 
 }
 
 label{
@@ -225,3 +225,31 @@ label{
     }
 
 }
+
+@media screen and (min-width: 1080px){
+    input[type=submit]{
+        display: inherit;
+    }
+
+    .main{
+        padding: 5.6em 0em 0 0em;
+    } 
+
+    form{
+        margin: 0 auto;
+        width: 23%;
+        flex-flow: row wrap;
+        align-content: space-between;
+
+    }
+
+    input[type=submit]{
+        margin: 2em 0.5em 0 0.5em;
+        height: 40px;
+        width: 140px;
+        border-radius: 0.3em;
+        border-style: none;
+        
+       
+    }
+} 
