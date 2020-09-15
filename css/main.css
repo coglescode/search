@@ -236,8 +236,7 @@ label{
     } 
 
     form{
-        margin: 0 auto;
-        width: 23%;
+       
         flex-flow: row wrap;
         align-content: space-between;
 
