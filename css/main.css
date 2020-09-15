@@ -56,6 +56,11 @@ body{
    font-weight: 500;
 }
 
+#g-logo{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 500;
+}
+
 .googleimg{
     margin: 0 0 0.5em 0.68em;
 }
@@ -70,10 +75,7 @@ body{
     letter-spacing: -0.5px;
 }
 
-#g-logo{
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 500;
-}
+
 
  form{
     display: flex;
@@ -167,3 +169,32 @@ label{
         display: none;
     }
 } 
+
+@media screen and (min-width: 600px){
+    .main{
+        padding: 6.5em 1em 0 1em;
+    }
+
+    .googlelogo{
+        font-size: 5.9em;
+        margin: 0 0 0.3em 0;
+        font-weight: 700;
+        letter-spacing: -6px;
+        padding: 0.1em;
+     }
+     
+     #g-logo{
+        font-weight: 700;
+     }
+
+     .googleimg{
+         margin: 0 0 0.5em 0.68em;
+     }
+}
+
+@media screen and (min-width: 1024px) {
+    .main{
+        padding: 6em 9em 0 9em;
+    }
+
+}
