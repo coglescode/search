@@ -22,6 +22,7 @@ body{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
  }
 
   a {
@@ -148,7 +149,6 @@ label{
     display: flex;
     justify-content: flex-start;
     font-family: 'Kumbh Sans', sans-serif;
-    
 }
 
 .input_adv{
@@ -171,6 +171,12 @@ label{
 } 
 
 @media screen and (min-width: 600px){
+
+    .header {
+       justify-content: flex-end;
+       padding: 0 1.5em 0 0;
+    }
+
     .main{
         padding: 6.5em 1em 0 1em;
     }
@@ -190,11 +196,32 @@ label{
      .googleimg{
          margin: 0 0 0.5em 0.68em;
      }
+
+     #g-images{
+        font-size: 0.2em;
+        position: relative;
+        top: 4.2em;
+        right: 3.1em;
+        letter-spacing: -0.5px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    .header {
+        justify-content: flex-end;
+        padding: 1em 1.5em 0 0;
+     }
+
     .main{
-        padding: 6em 9em 0 9em;
+        padding: 7em 9em 0 9em;
+    }
+
+    #g-images{
+        font-size: 0.2em;
+        position: relative;
+        top: 4.2em;
+        right: 3.1em;
+        letter-spacing: -0.5px;
     }
 
 }
