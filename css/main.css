@@ -20,14 +20,14 @@ body{
     display: -webkit-flex; 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
-    padding: 0 0 0 0;
+    justify-content: space-between;
     align-items: center;
  }
 
- a {
+  a {
    text-decoration: none;
    color:rgb(66,133,244); 
+   padding: 1em 1em 0 1em;
  }
 
 .main{
@@ -63,7 +63,7 @@ body{
 #g-images{
     font-size: 0.22em;
     position: relative;
-    top: 4.2em;
+    top: 4em;
     right: 2.7em;
     font-weight: normal;
     font-family: 'Kumbh Sans', sans-serif;
@@ -98,12 +98,12 @@ body{
     width: 100%;
     padding: 0.5em 0 0.5em 0.5em;
     border-radius: 3em;
-    border: 2px solid #dadce0;
+    border: 1px solid #dadce0;
  }
 
- .material-icons.md-24.md-inactive{ 
+ .material-icons.md-24.md-light{ 
      font-size: 24px;
-     color: rgba(0, 0, 0, 0.26);
+     color: rgba(0, 0, 0, 0.40);
     }
 
 .input_text{
