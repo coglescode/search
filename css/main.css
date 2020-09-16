@@ -25,7 +25,7 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
  }
 
-  a {
+ .header a {
    text-decoration: none;
    color:rgb(66,133,244); 
    padding: 1em 1em 0 1em;
@@ -81,10 +81,10 @@ body{
  form{
     display: flex;
     flex-flow: row;
-    justify-content: center;
-    align-content: center;
+    justify-content: center ;
+    align-content: ;
     width: 100%;
-    /* border: 2px solid red;  */ 
+    /*border: 2px solid red;  */
  
 }
 
@@ -106,7 +106,7 @@ body{
 
  .material-icons.md-24.md-light{ 
      font-size: 24px;
-     color: rgba(0, 0, 0, 0.40);
+     color: rgba(0, 0, 0, 0.30);
     }
 
 .input_text{
@@ -118,12 +118,15 @@ body{
 }
 
 input[type=submit]{
-     height: 50px;
-     width: 200px;
+     height: 40px;
+     width: 140px;
      border-radius: 0.3em;
      border-style: none;
      font-family: 'Kumbh Sans', sans-serif;
      font-size: 0.9em;
+     font-weight: 500;
+     color: rgba(0, 0, 0, 0.60);
+     
 }
 
 #adv_form {
@@ -174,9 +177,9 @@ label{
 
     .header {
        justify-content: flex-end;
-       padding: 0 1.5em 0 0;
+       padding: 2em;
     }
-
+    
     .main{
         padding: 6.5em 1em 0 1em;
     }
@@ -204,52 +207,47 @@ label{
         right: 3.1em;
         letter-spacing: -0.5px;
     }
-}
-
-@media screen and (min-width: 1024px) {
-    .header {
-        justify-content: flex-end;
-        padding: 1em 1.5em 0 0;
-     }
-
-    .main{
-        padding: 7em 9em 0 9em;
-    }
-
-    #g-images{
-        font-size: 0.2em;
-        position: relative;
-        top: 4.2em;
-        right: 3.1em;
-        letter-spacing: -0.5px;
-    }
-
-}
-
-@media screen and (min-width: 1080px){
-    input[type=submit]{
-        display: inherit;
-        margin: 2em 0.5em 0 0.5em;
-        height: 40px;
-        width: 140px;
-        border-radius: 0.3em;
-        border-style: none;
-    }
-
-    .main{
-        padding: 6em 0em 0 0em;
-    } 
 
     form{
-        width: 23%;
         flex-flow: row wrap;
-        align-content: space-between;
+        flex-basis: 0;
+        justify-content: ;
+        align-items: ;
+        margin: 0 0em 0 0em;       
     }
 
+    input[type=submit]{
+        display: inherit;
+        margin: 2em 1em 0 1em;            
+    }
+    
     #search_bar{
-        padding: 0.7em;
-        border-radius: 3em;
+        width: 500px;
+        margin: auto;
+    }
+}  
+
+@media screen and (min-width: 768px) {
+    #search_bar{
+        width: 650px;
+        margin: auto;
+        padding: 0.8em 0 0.8em 1em;
+        
+    }
+
+    .input_text{
+        margin: 0 0.6em 0 0.6em;
+    }
+
+    input[type=submit]{
+        font-size: 1em;
+        width: 160px;
+        height: 50px; 
+        letter-spacing: -0.05em           
     }
 
     
-} 
+  
+   
+
+}
