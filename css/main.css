@@ -181,20 +181,12 @@ label{
     }
     
     .main{
-        padding: 6.5em 1em 0 1em;
+        padding: 4em 1em 0 1em;
     }
-
-    .googlelogo{
-        font-size: 5.9em;
-        margin: 0 0 0.2em 0;
-        font-weight: 700;
-        letter-spacing: -6px;
-        padding: 0.1em;
-     }
+/*
+    
      
-     #g-logo{
-        font-weight: 700;
-     }
+      */
 
      .googleimg{
          margin: 0 0 0.5em 0.68em;
@@ -203,36 +195,44 @@ label{
      #g-images{
         font-size: 0.2em;
         position: relative;
-        top: 4.2em;
-        right: 3.1em;
+        top: 4.5em;
+        right: 3em;
         letter-spacing: -0.5px;
     }
 
-    form{
-        flex-flow: row wrap;
-        flex-basis: 0;
-        justify-content: ;
-        align-items: ;
-        margin: 0 0em 0 0em;       
+    #search_bar{
+       
+        margin: ;
+        padding: 0.8em 0 0.8em 1em;         
     }
 
-    input[type=submit]{
-        display: inherit;
-        margin: 2em 1em 0 1em;            
-    }
-    
-    #search_bar{
-        width: 500px;
-        margin: auto;
-    }
+ 
+
+   
 }  
 
 @media screen and (min-width: 768px) {
+    .googlelogo{
+        font-size: 6em;
+        margin: 0 0 0.1em 0;
+        font-weight: 900;
+        padding: 0.1em;
+        letter-spacing: -5px;
+     }
+
+     #g-logo{
+        font-weight: 900;
+     }
+
     #search_bar{
         width: 650px;
         margin: auto;
-        padding: 0.8em 0 0.8em 1em;
-        
+        padding: 0.8em 0 0.8em 1em;         
+    } 
+
+    form{
+        flex-flow: row wrap;
+        flex-basis: 0;      
     }
 
     .input_text{
@@ -240,10 +240,12 @@ label{
     }
 
     input[type=submit]{
+        display: inherit;
         font-size: 1em;
         width: 160px;
         height: 50px; 
-        letter-spacing: -0.05em           
+        letter-spacing: -0.05em; 
+        margin: 1em;          
     }
 
     
