@@ -129,6 +129,10 @@ input[type=submit]{
      
 }
 
+#adv_form h1{
+    margin: 0 0 0em 0;
+}
+
 #adv_form {
     display: -webkit-box;
     display: -moz-box;
@@ -138,8 +142,8 @@ input[type=submit]{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    align-content: space-around;
-    padding: 0.5em;
+    align-content: space-between;
+    padding: 0 1em;
     width: 100%; 
 }
 
@@ -168,6 +172,7 @@ label{
 /* ------------------------------------ */
 
 @media screen and (min-width: 320px){
+
     input[type=submit]{
         display: none;
     }
@@ -196,8 +201,7 @@ label{
         letter-spacing: -0.5px;
     }
 
-    #search_bar{
-       
+    #search_bar{      
         margin: ;
         padding: 0.8em 0 0.8em 1em;         
     }
@@ -205,6 +209,7 @@ label{
 }  
 
 @media screen and (min-width: 768px) {
+
     .main{
         padding: 4em 1em 0 1em;
     }
@@ -243,11 +248,7 @@ label{
 
     input[type=submit]{
         display: none;
-        font-size: 1em;
-        width: 160px;
-        height: 50px; 
-        letter-spacing: -0.05em; 
-        margin: 0.5em;          
+                
     }   
 
 }
@@ -284,7 +285,15 @@ label{
     }
 
     #search_bar{
-        padding: 1em 0 1em 1em;         
-    } 
+        padding: 0.9em 0 0.9em 1em;         
+    }
+    
+    input[type=submit]{
+        font-size: 1.1em;
+        width: 160px;
+        height: 50px; 
+        letter-spacing:; 
+        margin: 0.5em;  
+    }
 
 }
