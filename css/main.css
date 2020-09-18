@@ -132,7 +132,7 @@ input[type=submit]{
 #adv_form h4{
     width: 100%;
     font-family: 'Kumbh Sans', sans-serif;
-    margin: -2.6em 0 0 0;
+    margin: -2em 0 1em 0;
     font-weight: lighter;
 
 }
@@ -147,7 +147,7 @@ input[type=submit]{
     flex-flow: row wrap;
     justify-content: flex-start;
     align-content: space-between;
-    padding: 0 1em;
+    padding: 0 0.4em;
     width: 100%; 
 }
 
@@ -176,9 +176,18 @@ label{
 /* ------------------------------------ */
 
 @media screen and (min-width: 320px){
+
+    form{
+        flex-flow: row wrap;
+        flex-basis: ;      
+    }
     
     input[type=submit]{
         display: none;
+    }
+
+    input[value="Advanced Search"] {
+        display: inherit;
     }
 } 
 
