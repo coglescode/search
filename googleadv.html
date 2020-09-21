@@ -16,42 +16,99 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
         <title>Google Advanced Search</title>
     </head>
     <body>
-      
-            <div class="grid-container">
-                <div class="header">
-                    <a href="index.html">Google Search</a>
-                    <a href="googleimg.html">Image Search</a>
-                </div>
-                <div class="main">
+
+        <nav class="navbar navbar-expand justify-content-end">        
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Google Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="googleimg.html">Image Search</a>
+                </li>                
+            </ul>
+        </nav>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-4">
                     <h4>Advanced Search</h4>
-              
-                        <h3 id="findpages">Find pages with...</h3>
-                        
-             
-
-
-                    <form id="form_adv" action="https://google.com/search">
-                        
-                            <div id="adv_form">                            
-                                <label for="allthesewords">all these words:</label> 
-                                    <input type="text" name="q" class="input_adv"> 
-                                <label for="exactphrase">this exact word or phrase:</label>
-                                    <input type="text" name="q" class="input_adv"> 
-                                <label for="anywords">any of these words:</label> 
-                                    <input type="text" name="q" class="input_adv">
-                                <label for="nonethesewords">none of these words:</label> 
-                                <input type="text" name="q" class="input_adv"> 
-                            </div> 
-                     
-                                <input type="submit" value="Advanced Search">
-                    </form>
                 </div>
             </div>
-     
+
+            <div class="row">
+                <div class="col-12 p-4 d-flex justify-content-around">
+                    <span id="findpages">Find pages with...</span><span>Advanced Search</span>
+                </div>
+            </div>
+            
+        
+            <div class="container-fluid">
+                <form action="https://google.com/search">                       
+                    
+                        <div class="row ">
+                            <div class="col-md-4 ">                            
+                                <label for="allthesewords">all these words:</label>
+                            </div>
+                            <div class="col-md-4">                            
+                                <input type="text" name="q" class="input_adv">
+                            </div>
+                            <div class="col-md-4">                            
+                                <h5>Type the important words: tri-colour eat terrier</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">                                        
+                                <label for="exactphrase">this exact word or phrase:</label>
+                            </div>
+                            <div class="col-md-4">                            
+                                <input type="text" name="q" class="input_adv">
+                            </div>
+                            <div class="col-md-4">                            
+                                <h5>Put exact words in quotes: "rat terrier"</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">                                        
+                                <label for="anywords">any of these words:</label>
+                            </div>
+                            <div class="col-md-4">                            
+                                <input type="text" name="q" class="input_adv">
+                            </div>
+                            <div class="col-md-4">                            
+                                <h5>Type OR between all the words you want: miniature OR standard</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">                                        
+                                <label for="nonethesewords">none of these words:</label>
+                            </div>
+                            <div class="col-md-4">                            
+                                <input type="text" name="q" class="input_adv">
+                            </div>
+                            <div class="col-md-4">                            
+                                <h5>Put a minus sign just before words that you don't want:
+                                    -rodent, -"Jack Russell"
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">                                        
+                                <input type="submit" value="Advanced Search">
+                            </div>
+                            
+                        </div>                                      
+                </form>
+            </div>
+        
+
+        </div>
+
+
 
 
 
