@@ -9,25 +9,7 @@ body{
     grid-template-rows: repeat(auto-fit, 10vh calc(100vh - 10vh));
 }
 
-.header{
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex; 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Kumbh Sans', sans-serif;
- }
 
- .header a {
-   text-decoration: none;
-   color:rgb(66,133,244); 
-   padding: 1em 1em 0 1em;
- }
 
 .main{
     display: -webkit-box;
@@ -37,7 +19,6 @@ body{
     display: -webkit-flex; 
     display: flex;
     flex-flow: row wrap;
-    /*background-color: teal;*/ 
     justify-content: center;
     align-content: flex-start;
     padding: 3em 0.4em 0 0.4em;
@@ -66,8 +47,8 @@ body{
 #g-images{
     font-size: 0.22em;
     position: relative;
-    top: 3.5em;
-    right: 2.72em;
+    top: 4.4em;
+    right: 2.74em;
     font-weight: normal;
     font-family: 'Kumbh Sans', sans-serif;
     letter-spacing: -0.5px;
@@ -167,21 +148,13 @@ label{
     clear: both;
 }
 
-[class*="col-"]{
-    margin: 500px;
-}
+
 
 /* ------------------------------------ */
 
 @media screen and (min-width: 320px){
 
-    #g-images{
-        font-size: 0.2em;
-        position: relative;
-        top: 4em;
-        right: 3em;
-        letter-spacing: -0.5px;
-    }
+    
   
     form{
         flex-flow: row wrap;
@@ -204,11 +177,6 @@ label{
 
 @media screen and (min-width: 600px){
 
-    .header {
-       justify-content: flex-end;
-       padding: 2em;
-    }
-    
     .main{
         padding: 4em 1em 0 1em;
     }
@@ -220,7 +188,7 @@ label{
      #g-images{
         font-size: 0.2em;
         position: relative;
-        top: 4em;
+        top: 4.8em;
         right: 3em;
         letter-spacing: -0.5px;
     }
@@ -229,10 +197,6 @@ label{
         padding: 0.8em 0 0.8em 1em;         
     }
     
-    form h4 {
-        font-size: 1.5em;
-    }
-   
 }  
 
 @media screen and (min-width: 768px) {
@@ -255,7 +219,7 @@ label{
 
      #g-images{
         position: relative;
-        right: 3.2em;        
+        right: 3.1em;        
     }
 
     #search_bar{
@@ -275,12 +239,7 @@ label{
 
     input[type=submit]{
         display: none;              
-    }   
-
-    input[value="Advanced Search"] {
-        display: inherit;      
     }
-
 }
 
 @media screen and (max-width: 1000px) and (min-width: 800px) {
@@ -293,10 +252,10 @@ label{
         margin: 0 0 -0.2em 0;     
      }
 
-     #g-images{
+    #g-images{
         position: relative;
-        top: 4.4em;
-        right: 3.1em;
+        top: 4.82em;
+        right: 3.05em;
         letter-spacing: -0.5px;
     }
 
@@ -324,8 +283,8 @@ label{
 
     #g-images{     
         position: relative;
-        top: 4.4em;
-        right: 3.2em;
+        top: 4.9em;
+        right: 3.23em;
         letter-spacing: -0.5px;
     }
 
@@ -341,4 +300,5 @@ label{
         height: 50px; 
         margin: 0.7em;         
     }
+    
 }

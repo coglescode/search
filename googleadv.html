@@ -12,7 +12,7 @@
     <meta name="keywords" content="html5, css3, boostrap4">
     <meta http-equiv="refresh" content="">
 
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,8 +22,17 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-expand justify-content-end ">        
-            <ul class="nav p-3">
+        <nav class="navbar navbar-expand justify-content-between ">   
+            <div class="googlelogo">
+                <span id="g-logo" style="color: rgb(66,133,244);">G</span>
+                <span style="color: rgb(219,68,55);">o</span>
+                <span style="color: rgb(244,160,0);">o</span>
+                <span style="color: rgb(66,133,244);">g</span>
+                <span style="color: rgb(15,157,88);">l</span>
+                <span style="color: rgb(219,68,55);">e</span>
+            </div>
+
+            <ul class="nav p-4">
                 <li class="nav-item">
                     <a class="nav-link h6" href="index.html">Google Search</a>
                 </li>
@@ -35,17 +44,17 @@
         
         <div class="container-fluid ">
             <div class="row">
-                <div class="col-12 mx-md-4 ">
+                <div class="col mx-md-3 text-danger p-4">
                     <h4>Advanced Search</h4>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xl-6 d-flex mx-md-4 mt-5  ">
-                    <span id="findpages">Find pages with...</span>
+                <div class="col-xl-6 d-flex mx-md-4 mt-5">
+                    <h5>Find pages with...</h5>
                 </div>
-                <div class=" d-none d-xl-inline mt-5 ml-xl-n5 ">
-                    <span class="">To do this in the search box.</span>
+                <div class=" d-none d-xl-inline mt-5 ml-xl-n5">
+                    <h5>To do this in the search box.</h5>
                 </div>
             </div>
       
@@ -100,11 +109,25 @@
                             <div class="col-xl-6  ml-lg-n3 pr-lg-4    d-flex justify-content-center justify-content-xl-end my-3">                                        
                                 <input class="btn btn-primary" type="submit" value="Advanced Search">
                             </div>                            
-                        </div>  
-
-                                               
+                        </div>                                              
                         
                 </form>
+
+                <div class="border my-4"></div>
+                
+                <div class="row">
+                    <div class="col-12 d-flex  ml-3 my-3  ">
+                        <h5>You can also...</h5>
+                    </div>
+
+                    <div class="col-xl-6 d-column-flex mx-md-1 mt-0 h5 ">
+                        <a class="nav-link" href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">Find pages that are similar to URL</a>
+                        <a class="nav-link" href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">Search pages that you've visited</a>
+                        <a class="nav-link" href="https://support.google.com/websearch?p=adv_operators&hl=en">Use operators on the search box</a>
+                        <a class="nav-link" href="https://www.google.com/preferences?hl=en-SE">Customize your search settings</a>                           
+                    </div>
+                </div>
+
         
 
         
