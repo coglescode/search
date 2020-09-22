@@ -12,7 +12,7 @@
     <meta name="keywords" content="html5, css3, boostrap4">
     <meta http-equiv="refresh" content="">
 
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
+
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,88 +22,92 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-expand justify-content-end">        
-            <ul class="nav">
+        <nav class="navbar navbar-expand justify-content-end ">        
+            <ul class="nav p-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Google Search</a>
+                    <a class="nav-link h6" href="index.html">Google Search</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="googleimg.html">Image Search</a>
+                    <a class="nav-link h6" href="googleimg.html">Image Search</a>
                 </li>                
             </ul>
         </nav>
         
-        <div class="container-fluid">
+        <div class="container-fluid ">
             <div class="row">
-                <div class="col-12 p-4">
+                <div class="col-12 mx-md-4 ">
                     <h4>Advanced Search</h4>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-12 p-4 d-flex justify-content-around">
-                    <span id="findpages">Find pages with...</span><span>Advanced Search</span>
+                <div class="col-xl-6 d-flex mx-md-4 mt-5  ">
+                    <span id="findpages">Find pages with...</span>
+                </div>
+                <div class=" d-none d-xl-inline mt-5 ml-xl-n5 ">
+                    <span class="">To do this in the search box.</span>
                 </div>
             </div>
-            
-        
-            <div class="container-fluid">
-                <form action="https://google.com/search">                       
+      
+                <form id="adv_form" class="mx-md-4" action="https://google.com/search">                       
                     
-                        <div class="row ">
-                            <div class="col-md-4 ">                            
-                                <label for="allthesewords">all these words:</label>
+                        <div class="row d-flex align-items-center my-4">
+                            <div class="col-md-3 col-lg-3 col-xl-2 ">                           
+                                <label class="" for="allthesewords">all these words:</label>
                             </div>
-                            <div class="col-md-4">                            
-                                <input type="text" name="q" class="input_adv">
+                            <div class="col-md col-lg col-xl-4 ml-xl-n4">                            
+                                <input type="text" name="q" class="form-control colsm">
                             </div>
-                            <div class="col-md-4">                            
-                                <h5>Type the important words: tri-colour eat terrier</h5>
+                            <div class=" d-none d-xl-inline ml-3">
+                                <h6 class="">Type the important words: tri-colour eat terrier</h6>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">                                        
+                        <div class="row d-flex align-items-center my-4 ">
+                            <div class="col-md-3 col-lg-3 col-xl-2 ">                                        
                                 <label for="exactphrase">this exact word or phrase:</label>
                             </div>
-                            <div class="col-md-4">                            
-                                <input type="text" name="q" class="input_adv">
+                            <div class="col-md col-lg col-xl-4 ml-xl-n4">                            
+                                <input type="text" name="q" class="form-control">
                             </div>
-                            <div class="col-md-4">                            
-                                <h5>Put exact words in quotes: "rat terrier"</h5>
+                            <div class=" d-none d-xl-inline ml-3">                            
+                                <h6>Put exact words in quotes: "rat terrier"</h6>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">                                        
+                        
+                        <div class="row d-flex align-items-center my-4">
+                            <div class="col-md-3 col-lg-3 col-xl-2 ">                                        
                                 <label for="anywords">any of these words:</label>
                             </div>
-                            <div class="col-md-4">                            
-                                <input type="text" name="q" class="input_adv">
+                            <div class="col-md col-lg col-xl-4 ml-xl-n4">                           
+                                <input type="text" name="q" class="form-control">
                             </div>
-                            <div class="col-md-4">                            
-                                <h5>Type OR between all the words you want: miniature OR standard</h5>
+                            <div class=" d-none d-xl-inline ml-3" >                            
+                                <h6>Type OR between all the words you want: miniature OR standard</h6>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">                                        
+                        <div class="row d-flex align-items-center my-3">
+                            <div class="col-md-3 col-lg-3 col-xl-2 ">                                        
                                 <label for="nonethesewords">none of these words:</label>
                             </div>
-                            <div class="col-md-4">                            
-                                <input type="text" name="q" class="input_adv">
+                            <div class="col-md col-lg col-xl-4 ml-xl-n4">                           
+                                <input type="text" name="q" class="form-control">
                             </div>
-                            <div class="col-md-4">                            
-                                <h5>Put a minus sign just before words that you don't want:
-                                    -rodent, -"Jack Russell"
-                                </h5>
+                            <div class="col-lg-5 d-none d-xl-inline ">                            
+                                <h6>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</h6>
                             </div>
-                        </div>
+                        </div> 
                         <div class="row">
-                            <div class="col-md-4">                                        
-                                <input type="submit" value="Advanced Search">
-                            </div>
-                            
-                        </div>                                      
+                            <div class="col-xl-6  ml-lg-n3 pr-lg-4    d-flex justify-content-center justify-content-xl-end my-3">                                        
+                                <input class="btn btn-primary" type="submit" value="Advanced Search">
+                            </div>                            
+                        </div>  
+
+                                               
+                        
                 </form>
-            </div>
+        
+
+        
         
 
         </div>

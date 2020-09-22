@@ -7,9 +7,7 @@ body{
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-rows: repeat(auto-fit, 10vh calc(100vh - 10vh));
-    /*grid-template-rows: repeat(auto-fit,  minmax(100px, 1fr));*/ 
-
-   }
+}
 
 .header{
     -ms-box-orient: horizontal;
@@ -43,7 +41,6 @@ body{
     justify-content: center;
     align-content: flex-start;
     padding: 3em 0.4em 0 0.4em;
-
 }
 
 .googlelogo{
@@ -69,22 +66,18 @@ body{
 #g-images{
     font-size: 0.22em;
     position: relative;
-    top: 4em;
-    right: 2.7em;
+    top: 3.5em;
+    right: 2.72em;
     font-weight: normal;
     font-family: 'Kumbh Sans', sans-serif;
     letter-spacing: -0.5px;
 }
 
-
-
- form{
+form{
     display: flex;
     flex-flow: row;
     justify-content: center;
     width: 100%;
-    /*border: 2px solid red;  */
- 
 }
 
 #search_bar{
@@ -101,9 +94,9 @@ body{
     padding: 0.5em 0 0.5em 0.5em;
     border-radius: 3em;
     border: 1px solid #dadce0;
- }
+}
 
- .material-icons.md-24.md-light{ 
+.material-icons.md-24.md-light{ 
      font-size: 24px;
      color: rgba(0, 0, 0, 0.30);
     }
@@ -113,7 +106,6 @@ body{
     margin: 0 0.6em 0 0;
     border-style: none;  
     font-size: 16px;
-    /*border: 2px solid red; */
 }
 
 input[type=submit]{
@@ -124,8 +116,7 @@ input[type=submit]{
      font-family: 'Kumbh Sans', sans-serif;
      font-size: 0.9em;
      font-weight: 500;
-     color: rgba(0, 0, 0, 0.60);
-     
+     color: rgba(0, 0, 0, 0.60);     
 }
 
 form h4{
@@ -133,7 +124,6 @@ form h4{
     font-family: 'Kumbh Sans', sans-serif;
     margin: -2em 0 1.8em 0;
     font-weight: lighter;
-
 }
 
 #adv_form {
@@ -171,15 +161,31 @@ label{
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"]{
+    margin: 500px;
+}
 
 /* ------------------------------------ */
 
 @media screen and (min-width: 320px){
+
+    #g-images{
+        font-size: 0.2em;
+        position: relative;
+        top: 4em;
+        right: 3em;
+        letter-spacing: -0.5px;
+    }
   
     form{
         flex-flow: row wrap;
-        padding: 1em 0 2em 0;
-              
+        padding: 1em 0 2em 0;              
     }
     
     input[type=submit]{
@@ -194,8 +200,6 @@ label{
         border-radius: 0.2em;
         width: 150px;
     }
-
-    
 } 
 
 @media screen and (min-width: 600px){
@@ -216,7 +220,7 @@ label{
      #g-images{
         font-size: 0.2em;
         position: relative;
-        top: 4.5em;
+        top: 4em;
         right: 3em;
         letter-spacing: -0.5px;
     }
@@ -285,11 +289,16 @@ label{
         padding: 3em 1em 0 1em;
     }
 
-    .googlelogo{
-        
-        margin: 0 0 -0.2em 0;
-     
+    .googlelogo{        
+        margin: 0 0 -0.2em 0;     
      }
+
+     #g-images{
+        position: relative;
+        top: 4.4em;
+        right: 3.1em;
+        letter-spacing: -0.5px;
+    }
 
     input[type=submit]{
         display: inherit;
@@ -300,7 +309,6 @@ label{
         display: inherit;      
     }
 
-
     .googlelogo{
         font-size: 5em;
     }
@@ -308,15 +316,17 @@ label{
 }
 
 @media screen and (min-width: 1024px) {
-
-    .header{
-        border: 2px solid red;
-         
-    }
-
+ 
     .googlelogo{
         font-size: 7em;
         margin: 1em 0 0 0;
+    }
+
+    #g-images{     
+        position: relative;
+        top: 4.4em;
+        right: 3.2em;
+        letter-spacing: -0.5px;
     }
 
     .googleimages{
@@ -329,56 +339,6 @@ label{
         font-size: 1.1em;
         width: 180px;
         height: 50px; 
-        margin: 0.7em;
-         
+        margin: 0.7em;         
     }
-/*
-    .main{
-        padding: 0;
-        justify-content: ;
-    }
-
-    .main h4{
-        margin: 0;
-        padding: 1em 1.8em;
-        font-size: 2em;
-        width: 100%;    
-        border: 2px solid blue;     
-    }
-
-   
-
-       
-
-     
-  
-    /*
-
-    #form_adv{
-        width: 62.5em;
-        margin: 0 0 0 3em;
-        justify-content: flex-end;
-       
-    }
-    
-    #adv_form{
-        width: 100%;
-        align-items: baseline;
-        margin: 0em 0em 0 0em;    
-        border: 2px solid blue;     
-    }
-
-    label{        
-        width: 25%;
-        font-size: 1.2em;
-        padding: 0 0 0 0;
-    }
-
-    .input_adv{
-       width: 70%;
-       padding: 1em;
-       
-    }
- */
-
 }
