@@ -22,17 +22,20 @@
     </head>
     <body>
 
-        <nav class="navbar justify-content-end justify-content-sm-end justify-content-md-between">   
-            <a href="index.html" class="d-none d-md-inline ml-2 h3 font-weight-bold">
+        <nav class="navbar justify-content-end justify-content-sm-end justify-content-md-between">
+            <a class="gb_ve gb_uc" aria-label="Google" href="/webhp?tab=ww" title="Go to Google Home"><span class="gb_va gb_wc" aria-hidden="true"></span></a>
+            <!--a href="index.html" >
+                <div id="brand_logo">
                 <span id="g-logo" style="color: rgb(66,133,244);">G</span>
                 <span style="color: rgb(219,68,55);">o</span>
                 <span style="color: rgb(244,160,0);">o</span>
                 <span style="color: rgb(66,133,244);">g</span>
                 <span style="color: rgb(15,157,88);">l</span>
                 <span style="color: rgb(219,68,55);">e</span>
+             </div-->
             </a>
 
-            <ul class="nav pt-3">
+            <ul class="nav pt-4 mr-md-4">
                 <li class="nav-item">
                     <a class="nav-link h6" href="index.html">Google Search</a>
                 </li>
@@ -44,16 +47,16 @@
         
         <div class="container-fluid ">
             <div class="row">
-                <div class="col mx-md-3 text-danger p-4">
+                <div class="col mx-md-3 text-danger p-sm-4">
                     <h4>Advanced Search</h4>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xl-6 d-flex mx-md-4 mt-5">
+                <div class="col-xl-6 d-flex mx-md-4 mt-4">
                     <h5>Find pages with...</h5>
                 </div>
-                <div class=" d-none d-xl-inline mt-5 ml-xl-n5">
+                <div class=" d-none d-xl-inline mt-4 ml-xl-n5">
                     <h5>To do this in the search box.</h5>
                 </div>
             </div>
@@ -65,7 +68,7 @@
                                 <label class="" for="allthesewords">all these words:</label>
                             </div>
                             <div class="col-md col-lg col-xl-4 ml-xl-n4">                            
-                                <input type="text" name="q" class="form-control colsm">
+                                <input type="text" name="as_q" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control colsm">
                             </div>
                             <div class=" d-none d-xl-inline ml-3">
                                 <h6 class="">Type the important words: tri-colour eat terrier</h6>
@@ -76,7 +79,7 @@
                                 <label for="exactphrase">this exact word or phrase:</label>
                             </div>
                             <div class="col-md col-lg col-xl-4 ml-xl-n4">                            
-                                <input type="text" name="q" class="form-control">
+                                <input type="text" name="as_epq" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control">
                             </div>
                             <div class=" d-none d-xl-inline ml-3">                            
                                 <h6>Put exact words in quotes: "rat terrier"</h6>
@@ -88,7 +91,7 @@
                                 <label for="anywords">any of these words:</label>
                             </div>
                             <div class="col-md col-lg col-xl-4 ml-xl-n4">                           
-                                <input type="text" name="q" class="form-control">
+                                <input type="text" name="as_oq" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control">
                             </div>
                             <div class=" d-none d-xl-inline ml-3" >                            
                                 <h6>Type OR between all the words you want: miniature OR standard</h6>
@@ -99,18 +102,17 @@
                                 <label for="nonethesewords">none of these words:</label>
                             </div>
                             <div class="col-md col-lg col-xl-4 ml-xl-n4">                           
-                                <input type="text" name="q" class="form-control">
+                                <input type="text" name="as_eq" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control">
                             </div>
                             <div class="col-lg-5 d-none d-xl-inline ">                            
                                 <h6>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</h6>
                             </div>
                         </div> 
                         <div class="row">
-                            <div class="col-xl-6  ml-lg-n3 pr-lg-4    d-flex justify-content-center justify-content-xl-end my-3">                                        
+                            <div class="col-xl-6  ml-lg-n3 pr-lg-4  d-flex justify-content-center justify-content-xl-end my-3">                                        
                                 <input class="btn btn-primary" type="submit" value="Advanced Search">
                             </div>                            
-                        </div>                                              
-                        
+                        </div>               
                 </form>
 
                 <div class="border my-4"></div>
@@ -127,28 +129,6 @@
                         <a class="nav-link" href="https://www.google.com/preferences?hl=en-SE">Customize your search settings</a>                           
                     </div>
                 </div>
-
-        
-
-        
-        
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
     </body>
 </html>

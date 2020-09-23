@@ -75,10 +75,13 @@ form{
     flex-flow: row nowrap;
     justify-content: flex-start;
     width: 100%;
-    padding: 0.5em 0 0.5em 0.5em;
-    
+    padding: 0.5em 0 0.5em 0.5em;    
     border-radius: 3em;
     border: 1px solid #dadce0;
+}
+
+#search_bar:hover{
+    box-shadow: 0px 1px 6px 1px rgb(217, 217, 217);
 }
 
 .material-icons.md-24.md-light{ 
@@ -86,11 +89,16 @@ form{
      color: rgba(0, 0, 0, 0.30);
     }
 
-.input_text{
+input[type=text]{
     width: 100%;
     margin: 0 0.6em 0 0;
     border-style: none;  
     font-size: 16px;
+}
+
+.input_text:checked{
+    border: none;  
+    
 }
 
 input[type=submit]{
@@ -102,6 +110,10 @@ input[type=submit]{
      font-size: 0.9em;
      font-weight: 500;
      color: rgba(0, 0, 0, 0.60);     
+}
+
+input[type=submit]:hover{
+    border: 1px solid rgb(179, 179, 179);
 }
 
 form h4{
@@ -152,9 +164,9 @@ label{
     clear: both;
 }
 
-.headerlogo span{
+#brand_logo{
     font-family: 'Josefin Sans', sans-serif; 
-    font-size: 3em; 
+    font-size: 10em; 
 }
 
 
@@ -172,7 +184,7 @@ label{
     }
 
     input[value="Advanced Search"] {
-        display: inherit;
+        display: block;
         color: white;
         background-color: rgb(66,133,244);
         font-weight: 500;
@@ -255,7 +267,7 @@ label{
 @media screen and (max-width: 1000px) and (min-width: 800px) {     
 
     input[type=submit]{
-        display: inherit;
+        display: block;
         margin: 0.7em;
     }
 
@@ -270,27 +282,32 @@ label{
     .googlelogo{
         font-size: 7em;
         margin: 0 0 -0.3em 0;
+        -moz-letter-spacing: 2em;
+        -webkit-letter-spacing: 2em;
         letter-spacing: -0.07em;
+        -moz-
     }
 
     .googleimages{
-        margin: 0 0 -0.3em 0.64em;
-    
+        margin:0 0 -0.3em 0.64em;    
     }
 
     #g-images{     
         position: relative;
         top: 4.9em;
         right: 3em;
+        
         letter-spacing: -0.5px;
     }
    
     input[type=submit]{
-        display: inherit;
+        display: block;
         font-size: 1.1em;
         width: 180px;
         height: 50px; 
-        margin: 0.7em;         
+        margin: 0.7em;
+                 
     }
+    
     
 }

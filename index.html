@@ -18,15 +18,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
+    
         <title>Google Search</title>
     </head>
     <body>
         
-            <div class="grid-container">
-                       
-              
-                   
-                    <ul class="nav pt-3 justify-content-around  justify-content-sm-end">
+            <div class="grid-container">                   
+                    <ul class="nav pt-4 mr-md-4 justify-content-around  justify-content-sm-end">
                         <li class="nav-item">
                             <a class="nav-link h6" href="googleimg.html">Image Search</a>
                         </li>
@@ -47,66 +45,21 @@
                     <form action="https://google.com/search">
                        <div id="search_bar"> 
                         <i class="material-icons md-24 md-light">search</i>
-                        <input type="text" name="q" class="input_text"> 
+                        <input type="text" name="q" autocapitalize="off" autocomplete="off" spellcheck="false" maxlength="2048"> 
                        </div> 
-                        <input  type="submit" value="Google Search" >
-                        <input  type="submit" value="I'm Feeling Lucky" name="btnK">
+                        <input  type="submit" name="btnK" value="Google Search" >
+                        <input  type="submit" name="btnI" value="I'm Feeling Lucky" >
                     </form> 
                 </div>
                 <!-- div class="footer">
                     <p>Footer</p> 
                 </div -->
-            </div>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+            </div>  
+            
+            <script>
+                function unFocus (){
+                    document.getElementsByTagName("input").style.border="none";
+                }
+            </script>
     </body>
 </html>
