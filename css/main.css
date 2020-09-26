@@ -91,14 +91,14 @@ form{
 
 input[type=text]{
     width: 100%;
-    margin: 0 0.6em 0 0;
+    margin: 0 0.6em 0 0.7em;
     border-style: none;  
     font-size: 16px;
 }
 
-.input_text:checked{
-    border: none;  
-    
+input[type=text]:focus{
+    outline: none;
+    box-shadow: 0px 0px 0px transparent;
 }
 
 input[type=submit]{
@@ -109,7 +109,8 @@ input[type=submit]{
      font-family: 'Kumbh Sans', sans-serif;
      font-size: 0.9em;
      font-weight: 500;
-     color: rgba(0, 0, 0, 0.60);     
+     color: rgba(0, 0, 0, 0.60);  
+       
 }
 
 input[type=submit]:hover{
@@ -282,10 +283,8 @@ label{
     .googlelogo{
         font-size: 7em;
         margin: 0 0 -0.3em 0;
-        -moz-letter-spacing: 2em;
-        -webkit-letter-spacing: 2em;
-        letter-spacing: -0.07em;
-        -moz-
+        letter-spacing: -0.04em;
+        
     }
 
     .googleimages{
@@ -295,7 +294,7 @@ label{
     #g-images{     
         position: relative;
         top: 4.9em;
-        right: 3em;
+        right: 2.9em;
         
         letter-spacing: -0.5px;
     }

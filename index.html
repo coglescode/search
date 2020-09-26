@@ -24,7 +24,7 @@
     <body>
         
             <div class="grid-container">                   
-                    <ul class="nav pt-4 mr-md-4 justify-content-around  justify-content-sm-end">
+                    <ul class="nav p-4 mr-md-4 justify-content-around  justify-content-sm-end">
                         <li class="nav-item">
                             <a class="nav-link h6" href="googleimg.html">Image Search</a>
                         </li>
@@ -45,7 +45,7 @@
                     <form action="https://google.com/search">
                        <div id="search_bar"> 
                         <i class="material-icons md-24 md-light">search</i>
-                        <input type="text" name="q" autocapitalize="off" autocomplete="off" spellcheck="false" maxlength="2048"> 
+                        <input type="text"  autocapitalize="off" autofocus onload="unFocus()" autocomplete="off" spellcheck="false" maxlength="2048" > 
                        </div> 
                         <input  type="submit" name="btnK" value="Google Search" >
                         <input  type="submit" name="btnI" value="I'm Feeling Lucky" >
@@ -56,10 +56,5 @@
                 </div -->
             </div>  
             
-            <script>
-                function unFocus (){
-                    document.getElementsByTagName("input").style.border="none";
-                }
-            </script>
     </body>
 </html>
