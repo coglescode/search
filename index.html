@@ -8,7 +8,7 @@
     <!-- Optional-->
     <meta name="generator" content="Visual Studio Code">
     <meta name="dcterms.created" content=" revisa esta fecha 08:46:34 GMT">  <!---------Look to the left------------------>
-    <meta name="description" content="5">
+    <meta name="description" content="">
     <meta name="keywords" content="html5, css3 ">
     <meta http-equiv="refresh" content="">
 
@@ -22,39 +22,34 @@
         <title>Google Search</title>
     </head>
     <body>
-        
-            <div class="grid-container">                   
-                    <ul class="nav p-4 mr-md-4 justify-content-around  justify-content-sm-end">
-                        <li class="nav-item">
-                            <a class="nav-link h6" href="googleimg.html">Image Search</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link h6" href="googleadv.html">Advanced Search</a>
-                        </li>                
-                    </ul>
-               
-                <div class="main">
-                    <div class="googlelogo">
-                       <span id="g-logo" style="color: rgb(66,133,244);">G</span>
-                       <span style="color: rgb(219,68,55);">o</span>
-                       <span style="color: rgb(244,160,0);">o</span>
-                       <span style="color: rgb(66,133,244);">g</span>
-                       <span style="color: rgb(15,157,88);">l</span>
-                       <span style="color: rgb(219,68,55);">e</span>
-                    </div>
-                    <form action="https://google.com/search">
-                       <div id="search_bar"> 
-                        <i class="material-icons md-24 md-light">search</i>
-                        <input type="text"  autocapitalize="off" autofocus onload="unFocus()" autocomplete="off" spellcheck="false" maxlength="2048" > 
-                       </div> 
-                        <input  type="submit" name="btnK" value="Google Search" >
-                        <input  type="submit" name="btnI" value="I'm Feeling Lucky" >
-                    </form> 
+        <nav class="nav justify-content-around justify-content-sm-end py-3 p-md-4 ">               
+            <a class="nav-link h6" href="googleimg.html">Image Search</a>
+            <a class="nav-link h6" href="googleadv.html">Advanced Search</a>             
+        </nav>
+
+        <div class="wrapper">                                  
+            <div class="main">
+                <div class="googlelogo">
+                    <span id="g-logo" style="color: rgb(66,133,244);">G</span>
+                    <span style="color: rgb(219,68,55);">o</span>
+                    <span style="color: rgb(244,160,0);">o</span>
+                    <span style="color: rgb(66,133,244);">g</span>
+                    <span style="color: rgb(15,157,88);">l</span>
+                    <span style="color: rgb(219,68,55);">e</span>
                 </div>
+                <form id="form" action="https://google.com/search">
+                    <div id="search_bar"> 
+                    <i class="material-icons md-24 md-light">search</i>
+                    <input class="type_text" type="text" name="q" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048"> 
+                    </div> 
+                    <input class="type_submit" type="submit" name="btnK" value="Google Search" >
+                    <input class="type_submit" type="submit" name="btnI" value="I'm Feeling Lucky" >
+                </form> 
+            </div>
                 <!-- div class="footer">
                     <p>Footer</p> 
                 </div -->
-            </div>  
+        </div>  
             
     </body>
 </html>

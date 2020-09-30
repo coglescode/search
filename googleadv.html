@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Required meta tags -->    
+    <!-- Required meta tags -->    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -12,42 +12,44 @@
     <meta name="keywords" content="html5, css3, boostrap4">
     <meta http-equiv="refresh" content="">
 
+     <!-- Boostrap Core -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+   
     
         <title>Google Advanced Search</title>
     </head>
-    <body>
-
-        <nav class="navbar justify-content-end justify-content-sm-end justify-content-md-between alert-secondary align-items-center">
-            <a class="gb_ve gb_uc" aria-label="Google" href="/webhp?tab=ww" title="Go to Google Home"><span class="gb_va gb_wc" aria-hidden="true"></span></a>
-            <!--a href="index.html" >
-                <div id="brand_logo">
-                <span id="g-logo" style="color: rgb(66,133,244);">G</span>
-                <span style="color: rgb(219,68,55);">o</span>
-                <span style="color: rgb(244,160,0);">o</span>
-                <span style="color: rgb(66,133,244);">g</span>
-                <span style="color: rgb(15,157,88);">l</span>
-                <span style="color: rgb(219,68,55);">e</span>
-             </div-->
+    <body>        
+        <nav class="nav justify-content-around justify-content-sm-end justify-content-xl-between align-items-center py-3 p-md-3  alert-secondary">               
+            <a class="navbar-brand d-none d-xl-block" href="index.html">
+                <div class="googlelogo brand-logo mr-3">
+                    <span id="g-logo" style="color: rgb(66,133,244);">G</span>
+                    <span style="color: rgb(219,68,55);">o</span>
+                    <span style="color: rgb(244,160,0);">o</span>
+                    <span style="color: rgb(66,133,244);">g</span>
+                    <span style="color: rgb(15,157,88);">l</span>
+                    <span style="color: rgb(219,68,55);">e</span>
+                </div>
             </a>
-
-            <ul class="nav p-4 mr-md-4 ">
-                <li class="nav-item">
-                    <a class="nav-link h6" href="index.html">Google Search</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link h6" href="googleimg.html">Image Search</a>
-                </li>                
-            </ul>
+            <ul class="nav">
+            <a class="nav-link h6 testfont" href="index.html">Google Search</a>
+            <a class="nav-link h6" href="googleimg.html">Image Search</a>             
+            </ul>    
         </nav>
+
+      
         
-        <div class="container-fluid ">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col mx-md-3 text-danger p-sm-4">
+                <div class="col mx-md-3 text-danger p-3 p-sm-4 border-bottom">
                     <h4>Advanced Search</h4>
                 </div>
             </div>
@@ -61,7 +63,7 @@
                 </div>
             </div>
       
-                <form id="adv_form" class="mx-md-4" action="https://google.com/search">                       
+                <form class="mx-md-4" action="https://google.com/search">                       
                     
                         <div class="row d-flex align-items-center my-4">
                             <div class="col-md-3 col-lg-3 col-xl-2 ">                           
@@ -70,7 +72,7 @@
                             <div class="col-md col-lg col-xl-4 ml-xl-n4">                            
                                 <input type="text" name="as_q" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" id="unfocus" class="form-control  shadow-none">
                             </div>
-                            <div class=" d-none d-xl-inline ml-3">
+                            <div class="d-none d-xl-inline ml-3">
                                 <h6 class="">Type the important words: tri-colour eat terrier</h6>
                             </div>
                         </div>
