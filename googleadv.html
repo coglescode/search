@@ -13,9 +13,10 @@
     <meta http-equiv="refresh" content="">
 
      <!-- Boostrap Core -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
     
-    <!-- Own CSS -->
+     <!-- Own CSS -->
     <link rel="stylesheet" href="./css/main.css" type="text/css">
     
     <!-- Google Fonts -->
@@ -40,7 +41,7 @@
                 </div>
             </a>
             <ul class="nav">
-            <a class="nav-link h6 testfont" href="index.html">Google Search</a>
+            <a class="nav-link h6" href="index.html">Google Search</a>
             <a class="nav-link h6" href="googleimg.html">Image Search</a>             
             </ul>    
         </nav>
@@ -55,71 +56,69 @@
             </div>
 
             <div class="row">
-                <div class="col-xl-6 d-flex mx-md-4 mt-4">
+                <div class="col-xl-6 d-flex ml-md-4 mt-4 mr-xl-n5">
                     <h5>Find pages with...</h5>
                 </div>
-                <div class=" d-none d-xl-inline mt-4 ml-xl-n5">
+                <div class="col-xl-5 d-none d-xl-inline mt-4">
                     <h5>To do this in the search box.</h5>
                 </div>
             </div>
       
-                <form class="mx-md-4" action="https://google.com/search">                       
-                    
-                        <div class="row d-flex align-items-center my-4">
-                            <div class="col-md-3 col-lg-3 col-xl-2 ">                           
-                                <label class="" for="allthesewords">all these words:</label>
-                            </div>
-                            <div class="col-md col-lg col-xl-4 ml-xl-n4">                            
-                                <input type="text" name="as_q" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" id="unfocus" class="form-control  shadow-none">
-                            </div>
-                            <div class="d-none d-xl-inline ml-3">
-                                <h6 class="">Type the important words: tri-colour eat terrier</h6>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center my-4 ">
-                            <div class="col-md-3 col-lg-3 col-xl-2 ">                                        
-                                <label for="exactphrase">this exact word or phrase:</label>
-                            </div>
-                            <div class="col-md col-lg col-xl-4 ml-xl-n4">                            
-                                <input type="text" name="as_epq" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control shadow-none">
-                            </div>
-                            <div class=" d-none d-xl-inline ml-3">                            
-                                <h6>Put exact words in quotes: "rat terrier"</h6>
-                            </div>
-                        </div>
-                        
-                        <div class="row d-flex align-items-center my-4">
-                            <div class="col-md-3 col-lg-3 col-xl-2 ">                                        
-                                <label for="anywords">any of these words:</label>
-                            </div>
-                            <div class="col-md col-lg col-xl-4 ml-xl-n4">                           
-                                <input type="text" name="as_oq" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control shadow-none">
-                            </div>
-                            <div class=" d-none d-xl-inline ml-3" >                            
-                                <h6>Type OR between all the words you want: miniature OR standard</h6>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center my-3">
-                            <div class="col-md-3 col-lg-3 col-xl-2 ">                                        
-                                <label for="nonethesewords">none of these words:</label>
-                            </div>
-                            <div class="col-md col-lg col-xl-4 ml-xl-n4">                           
-                                <input type="text" name="as_eq" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control shadow-none">
-                            </div>
-                            <div class="col-lg-5 d-none d-xl-inline ">                            
-                                <h6>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</h6>
-                            </div>
-                        </div> 
-                        <div class="row">
-                            <div class="col-xl-6  ml-lg-n3 pr-lg-4  d-flex justify-content-center justify-content-xl-end my-3">                                        
-                                <input class="btn btn-primary" type="submit" value="Advanced Search">
-                            </div>                            
-                        </div>               
-                </form>
-
-                <div class="border my-4"></div>
+            <form  class="mx-md-4 border-bottom pb-4 form" action="https://google.com/search">                       
                 
+                <div class="row d-flex align-items-center my-4">
+                    <div class="col-md-3 col-lg-3 col-xl-2 ">                           
+                        <label for="allthesewords">all these words:</label>
+                    </div>
+                    <div class="col-md col-lg col-xl-4 ml-xl-n4">                            
+                        <input type="text" name="as_q" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" id="unfocus" class="form-control  shadow-none">
+                    </div>
+                    <div class="col-lg-4 d-none d-xl-inline ml-3">
+                        <h6>Type the important words: tri-colour eat terrier</h6>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center my-4 ">
+                    <div class="col-md-3 col-lg-3 col-xl-2 ">                                        
+                        <label for="exactphrase">this exact word or phrase:</label>
+                    </div>
+                    <div class="col-md col-lg col-xl-4 ml-xl-n4">                            
+                        <input type="text" name="as_epq" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control shadow-none">
+                    </div>
+                    <div class="col-lg-4 d-none d-xl-inline ml-3">                            
+                        <h6>Put exact words in quotes: "rat terrier"</h6>
+                    </div>
+                </div>
+                
+                <div class="row d-flex align-items-center my-4">
+                    <div class="col-md-3 col-lg-3 col-xl-2 ">                                        
+                        <label for="anywords">any of these words:</label>
+                    </div>
+                    <div class="col-md col-lg col-xl-4 ml-xl-n4">                           
+                        <input type="text" name="as_oq" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control shadow-none">
+                    </div>
+                    <div class="col-lg-4 d-none d-xl-inline ml-3" >                            
+                        <h6>Type OR between all the words you want: miniature OR standard</h6>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center my-3">
+                    <div class="col-md-3 col-lg-3 col-xl-2 ">                                        
+                        <label for="nonethesewords">none of these words:</label>
+                    </div>
+                    <div class="col-md col-lg col-xl-4 ml-xl-n4">                           
+                        <input type="text" name="as_eq" autocapitalize="off" autofocus autocomplete="off" spellcheck="false" maxlength="2048" class="form-control shadow-none">
+                    </div>
+                    <div class="col-lg-4 d-none d-xl-inline ml-xl-3">                            
+                        <h6>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</h6>
+                    </div>
+                </div> 
                 <div class="row">
+                    <div class="col-xl-6  ml-lg-n3 pr-lg-3  d-flex justify-content-center justify-content-xl-end my-3">                                        
+                        <input class="btn btn-primary" type="submit" value="Advanced Search">
+                    </div>                            
+                </div>               
+            </form>
+
+            <div class="row">
                     <div class="col-12 d-flex  ml-3 my-3  ">
                         <h5>You can also...</h5>
                     </div>
